@@ -1,0 +1,24 @@
+{
+  "name": "eha-angular",
+  "version": "1.0.0",
+  "description": "Simple app to demo angular-pouchdb put wrapper",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "^1.4.9",
+    "angular-mocks": "^1.4.9",
+    "angular-pouchdb": "^4.1.0",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.19"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.6"
+  },
+  "scripts": {
+    "test": "karma start"
+  },
+  "author": "Tabitha Goodall",
+  "license": "ISC"
+}
