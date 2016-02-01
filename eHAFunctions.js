@@ -12,7 +12,7 @@
 	* @param {string} string2
 	* @returns {string} a string containing the common characters
 	*/
-	eHAFunctions.find_chars_1 = function(string1, string2) {
+	eHAFunctions.find_chars_1 = function find_chars_1(string1, string2) {
 
 		var result = [];
 
@@ -41,21 +41,21 @@
 	* @param {string} string2
 	* @returns {string} a string containing the common characters
 	*/
-	eHAFunctions.find_chars_2 = function(string1, string2) {
+	eHAFunctions.find_chars_2 = function find_chars_2(string1, string2) {
 
 		var result = [];
 		var charMap = {};
 		var idx = 0;
 
 		for (var i = 0, len = string2.length; i < len; i++) {
-			var c1 = string2[i];
+			var c2 = string2[i];
 			charMap[c2] = true;
 		}
 
 		for (i = 0, len = string1.length; i < len; i++) {
-			var c2 = string2[i];
-			if (charMap[c2]) {
-				result.push(c2);
+			var c1 = string1[i];
+			if (charMap[c1] && result.indexOf(c1) === -1) {
+				result.push(c1);
 			}
 		}
 
@@ -69,7 +69,7 @@
 	* @param {number[]} arr - a sorted array
 	* @returns {number[]} the compacted array as a new array object
 	*/
-	eHAFunctions.compact_array = function(arr) {
+	eHAFunctions.compact_array = function compact_array(arr) {
 
 		var current, compare;
 
@@ -113,7 +113,7 @@
 	* @param {number} n
 	* @returns {Object[]} the rotated array
 	*/
-	eHAFunctions.rotate_array = function(arr, n) {
+	eHAFunctions.rotate_array = function rotate_array(arr, n) {
 
 		if (n <= 0) {
 			return arr;
@@ -143,7 +143,7 @@
 	* @param {number[]} arr
 	* @returns {number}
 	*/
-	eHAFunctions.find_lcm = function(arr) {
+	eHAFunctions.find_lcm = function find_lcm(arr) {
 
 		while (arr.length >= 2) {
 
@@ -171,7 +171,7 @@
 	* @param {number} y
 	* @returns {number} the GCD of x and y
 	*/
-	var find_gcd = function(x, y) {
+	var find_gcd = function find_gcd(x, y) {
 
 		while (x !== y) {
 			if (x > y) {
